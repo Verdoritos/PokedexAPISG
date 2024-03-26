@@ -22,8 +22,13 @@ body {
   overflow: hidden;
   margin: 20px; /* Margem ao redor do card */    
   border: 3px solid black;
+  transition: transform 0.1s ease-in-out; /* suaviza a transição */
 
-  }
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
   
 .card-img {
   width: 100%; /* Garante que a imagem preencha toda a largura do card */
