@@ -29,7 +29,8 @@ body {
 .card:hover{
   transform: scale(1.05);
 }
-  
+
+ 
 .card-img {
   width: 100%; /* Garante que a imagem preencha toda a largura do card */
 
@@ -85,12 +86,14 @@ body {
   background-color: rgb(6, 112, 30);
   border-radius: 5px;
   border: 3px solid black;
+  color: #fff;
 }
 
 .poison {
   background-color: rgb(103, 6, 108); 
   border-radius: 5px;
   border: 3px solid black;
+  color: #fff;
 }
 
 .bug {
@@ -151,6 +154,7 @@ body {
   background-color: rgb(93, 65, 16); 
   border-radius: 5px;
   border: 3px solid black;
+  color: #fff;
 }
 
 .ice {
@@ -159,5 +163,15 @@ body {
   border: 3px solid black;
 }
 
+.ghost {
+  background-color: rgb(58, 11, 87); 
+  border-radius: 5px;
+  border: 3px solid black;
+  color: #fff;
+}
 
-
+.dragon {
+  background: linear-gradient(to bottom, rgb(26, 16, 212), rgb(232, 75, 19));
+  border-radius: 5px;
+  border: 3px solid black;
+}
