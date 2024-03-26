@@ -1,0 +1,158 @@
+body {
+  background: url("./pokemon-bg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 100vh; /* Definindo a altura máxima da tela */
+  overflow-y: auto; /*Adicionando rolagem vertical, se necessário*/
+}
+
+.card {
+  width: 300px; /* Largura do card */
+  background-color: #fff;
+  background-image: url(./pokeball.jpg);
+  background-size: cover; /* Garante que a imagem cubra todo o card */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do card */
+  overflow: hidden;
+  margin: 20px; /* Margem ao redor do card */    
+  border: 3px solid black;
+
+  }
+  
+.card-img {
+  width: 100%; /* Garante que a imagem preencha toda a largura do card */
+
+}
+
+.card-content {
+  padding: 20px; /* Espaçamento interno do conteúdo do card */
+  margin-top: 155px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+}
+
+.card-content p {
+  margin-bottom: 10px;
+}
+
+.card-content a {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.divImg{
+  width: 150px;
+  margin-left: 75px;
+  margin-top: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+.tipo {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: inline-block; /* Torna a div do tipo inline-block */
+  margin-left: 3px;
+}
+
+/* Definindo as cores para cada tipo */
+.water {
+  background-color: rgb(40, 146, 182); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.grass {
+  background-color: rgb(6, 112, 30);
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.poison {
+  background-color: rgb(103, 6, 108); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.bug {
+  background-color: rgb(16, 191, 10); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.flying {
+  background: linear-gradient(to bottom, rgb(52, 16, 212), rgb(182, 177, 177));
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.fire {
+  background-color: orangered; 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.normal {
+  background-color: rgb(150, 160, 150); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.ground {
+  background: linear-gradient(to bottom, rgb(212, 209, 16), rgb(99, 94, 8));
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.electric {
+  background-color: rgb(234, 255, 5); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.fairy {
+  background-color: rgb(244, 91, 213); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.fighting {
+  background-color: rgb(251, 3, 3); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.psychic {
+  background-color: rgb(191, 40, 148); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.rock {
+  background-color: rgb(93, 65, 16); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+.ice {
+  background-color: rgb(79, 255, 243); 
+  border-radius: 5px;
+  border: 3px solid black;
+}
+
+
+
