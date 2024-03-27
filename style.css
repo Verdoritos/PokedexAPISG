@@ -16,8 +16,6 @@ body {
 
 nav {
   background-color: #333;
-  border: 2px;
-  border-color: red;
   display: block;
 }
 
@@ -27,7 +25,7 @@ nav div{
 }
 
 .imgnav{
-  height: 80px;
+  height: 50px;
 }
 
 a:not(.ignoreCSS) {
@@ -64,7 +62,6 @@ li a:hover {
 
 .card {
   width: 300px; /* Largura do card */
-  background-color: #fff;
   background-image: url(./pokeball.jpg);
   background-size: cover; /* Garante que a imagem cubra todo o card */
   background-position: center; /* Centraliza a imagem */
@@ -72,7 +69,7 @@ li a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do card */
   overflow: hidden;
-  margin: 20px; /* Margem ao redor do card */    
+  margin: 10px; /* Margem ao redor do card */    
   border: 3px solid black;
   transition: transform 0.1s ease-in-out; /* suaviza a transição */
 
@@ -227,4 +224,12 @@ li a:hover {
   background: linear-gradient(to bottom, rgb(26, 16, 212), rgb(232, 75, 19));
   border-radius: 5px;
   border: 3px solid black;
+}
+
+.cartas{
+  margin: 10px;
+}
+
+.cartas:hover{
+  transform: scale(1.05);
 }
