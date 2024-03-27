@@ -2,12 +2,64 @@ body {
   background: url("./pokemon-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: Arial, Helvetica, sans-serif;    
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+}
+
+#container {    
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-height: 100vh; /* Definindo a altura máxima da tela */
   overflow-y: auto; /*Adicionando rolagem vertical, se necessário*/
+}
+
+nav {
+  background-color: #333;
+  border: 2px;
+  border-color: red;
+  display: block;
+}
+
+nav div{
+  height: 100%; /* Definindo a altura da div para ocupar toda a altura do nav */
+  width: 100%;
+}
+
+.imgnav{
+  height: 80px;
+}
+
+a:not(.ignoreCSS) {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
 }
 
 .card {
@@ -39,6 +91,7 @@ body {
 .card-content {
   padding: 20px; /* Espaçamento interno do conteúdo do card */
   margin-top: 155px;
+  color: black;
 }
 
 .card-content h3 {

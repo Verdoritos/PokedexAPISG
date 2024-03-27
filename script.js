@@ -58,12 +58,14 @@ async function listapoke() {
   
         // Adicionar conteúdo ao card
         card.innerHTML = `
+          <a class="ignoreCSS" style="text-decoration: none" " href="#">
           <div class="divImg">
             <img src="${pokemon.sprites.front_default}" class="card-img">
           </div>
           <div class="card-content">
             <h3>${i} - ${nomeMaiusculo}</h3>
           </div>
+          </a>
         `;
   
         // Adicionar uma div para cada tipo do Pokémon dentro do card-content
