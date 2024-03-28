@@ -10,17 +10,72 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-height: 100vh; /* Definindo a altura máxima da tela */
-  overflow-y: auto; /*Adicionando rolagem vertical, se necessário*/
+  max-height: 100vh; 
+  overflow-y: auto; 
+}
+
+/* CSS para tela pequena (até 100px de largura) */
+@media only screen and (max-width: 1000px) {
+nav {
+  display: flex; /* Exibir a navegação como um flex container */
+  justify-content: space-between; /* Distribuir os itens horizontalmente com espaçamento igual */
+  align-items: center; /* Centralizar verticalmente */
+}
+
+.menu-list {
+  display: none; /* Inicialmente, a lista de navegação está oculta */
+  width: 100%; /* Definir a largura da lista de navegação para 100% da largura da navegação */
+  max-width: 100%; /* Limitar a largura máxima da lista de navegação à largura da navegação */
+  box-sizing: border-box; /* Incluir a largura do padding e da borda na largura total */
+  padding: 0; /* Remover o padding interno */
+  margin: 0; /* Remover margens */
+}
+
+/* Estilo do menu de hambúrguer */
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px; /* Ajuste o padding para controlar o tamanho do ícone */
+  cursor: pointer;
+  width: 40px; /* Defina explicitamente a largura do ícone */
+  height: 40px; /* Defina explicitamente a altura do ícone */
+}
+
+  /* Estilo do menu de hambúrguer quando ativado */
+  .menu-list.active {
+    display: block; /* Exibir a lista de navegação quando a classe active for aplicada */
+  }
+
+  /* Estilos adicionais para a lista de navegação */
+  .menu-list li {
+    text-align: center;
+  }
+
+  .menu-list li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* CSS para telas maiores */
+@media only screen and (min-width: 1001px) {
+  .menu-icon {
+    display: none; /* Ocultar o ícone do menu */
+  }
 }
 
 nav {
   background-color: #333;
   display: block;
+  
 }
 
 nav div{
-  height: 100%; /* Definindo a altura da div para ocupar toda a altura do nav */
+  height: 100%; 
   width: 100%;
 }
 
@@ -51,8 +106,8 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 16vh;
+  padding-right: 16vh;
   text-decoration: none;
 }
 
