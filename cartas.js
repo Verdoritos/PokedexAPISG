@@ -1,3 +1,8 @@
+function toggleMenu() {
+    var ul = document.querySelector(".menu-list");
+    ul.classList.toggle("active");
+  }
+ 
  async function fetchFirstGenPokemonCards() {
     try {
     // Fazendo uma requisição GET para a API
