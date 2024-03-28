@@ -10,15 +10,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-height: 100vh; 
-  overflow-y: auto; 
 }
 
 /* CSS para tela pequena (até 100px de largura) */
 @media only screen and (max-width: 1000px) {
   nav {
     display: flex; /* Exibir a navegação como um flex container */
-    justify-content: space-between; /* Distribuir os itens horizontalmente com espaçamento igual */
+    justify-content: center; /* Distribuir os itens horizontalmente com espaçamento igual */
     align-items: center; /* Centralizar verticalmente */
   }
 
@@ -123,7 +121,7 @@ li a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do card */
   overflow: hidden;
-  margin: 10px; /* Margem ao redor do card */    
+  margin: 6px; /* Margem ao redor do card */    
   border: 3px solid black;
   transition: transform 0.1s ease-in-out; /* suaviza a transição */
 
