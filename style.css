@@ -37,9 +37,8 @@ nav {
   align-items: center;
   justify-content: center;
   color: white;
-  padding: 10px; /* Ajuste o padding para controlar o tamanho do ícone */
   cursor: pointer;
-  width: 40px; /* Defina explicitamente a largura do ícone */
+  width: 100%; /* Defina explicitamente a largura do ícone */
   height: 40px; /* Defina explicitamente a altura do ícone */
 }
 
