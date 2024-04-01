@@ -1,3 +1,12 @@
+@media only screen and (max-width: 600px) {
+  .centro {
+    width: 90%; /* Defina uma largura maior para ocupar a largura da tela */
+    padding: 5px; /* Reduza o espaçamento interno */
+    font-size: medium; /* Reduza ligeiramente o tamanho da fonte */
+    margin-top: 0;
+  }
+}
+
 body {
   background: url("./pokemon-bg.jpg") no-repeat;
   background-size: cover;
@@ -12,7 +21,7 @@ body {
   justify-content: center;
 }
 
-/* CSS para tela pequena (até 100px de largura) */
+/* CSS para tela pequena (até 1000px de largura) */
 @media only screen and (max-width: 1000px) {
   nav {
     display: flex; /* Exibir a navegação como um flex container */
@@ -69,7 +78,6 @@ nav {
   background-color: #333;
   display: block;
   
-  
 }
 
 nav div{
@@ -89,7 +97,18 @@ a:not(.ignoreCSS) {
   text-decoration: none;
 }
 
-ul:not(.ignoreCSS){
+/* ul:not(.ignoreCSS){
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+} */
+
+nav div ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -115,8 +134,7 @@ li a:hover {
 
 .centro {
   background-color: #de7e1e;
-  width: 60%; /* Defina a largura da div para ocupar toda a largura disponível */
-  max-width: 60%; /* Defina a largura máxima para evitar que ela ultrapasse os limites da tela */
+  width: 65%; /* Defina a largura da div para ocupar toda a largura disponível */
   box-sizing: border-box; /* Inclua o padding e a borda na largura total */
   padding: 5px 30px; /* Adicione um espaçamento interno de 20px nas laterais */
   margin: 0 auto; /* Centralize a div horizontalmente */

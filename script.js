@@ -49,7 +49,3 @@ async function listapoke() {
   }
   
   listapoke();
-
-
-  
-  
