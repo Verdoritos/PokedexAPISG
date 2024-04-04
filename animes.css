@@ -1,0 +1,139 @@
+body {
+  background: url("./pokemon-bg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+}
+
+/* CSS para tela pequena (até 1000px de largura) */
+@media only screen and (max-width: 1000px) {
+  nav {
+    display: flex; /* Exibir a navegação como um flex container */
+    justify-content: center; /* Distribuir os itens horizontalmente com espaçamento igual */
+    align-items: center; /* Centralizar verticalmente */
+  }
+
+  .menu-list {
+    display: none; /* Inicialmente, a lista de navegação está oculta */
+    width: 100%; /* Definir a largura da lista de navegação para 100% da largura da navegação */
+    max-width: 100%; /* Limitar a largura máxima da lista de navegação à largura da navegação */
+    box-sizing: border-box; /* Incluir a largura do padding e da borda na largura total */
+    padding: 0; /* Remover o padding interno */
+    margin: 0; /* Remover margens */
+  }
+
+  /* Estilo do menu de hambúrguer */
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    width: 100%; /* Defina explicitamente a largura do ícone */
+    height: 40px; /* Defina explicitamente a altura do ícone */
+  }
+
+  /* Estilo do menu de hambúrguer quando ativado */
+  .menu-list.active {
+    display: block; /* Exibir a lista de navegação quando a classe active for aplicada */
+  }
+
+  /* Estilos adicionais para a lista de navegação */
+  .menu-list li {
+    text-align: center;
+  }
+
+  .menu-list li a {
+    padding: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+}
+
+/* CSS para telas maiores */
+@media only screen and (min-width: 1001px) {
+  .menu-icon {
+    display: none; /* Ocultar o ícone do menu */
+  }
+}
+
+nav {
+  background-color: #333;
+  display: block;
+  
+}
+
+nav div{
+  height: 100%; 
+  width: 100%;
+}
+
+.imgnav{
+  height: 50px;
+}
+
+a:not(.ignoreCSS) {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding-left: 16vh;
+  padding-right: 16vh;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 0, 0.5);
+  }
+
+h2 {
+  color: #333;
+}
+
+h3 {
+  color: #444;
+}
+
+p {
+  color: #555;
+  line-height: 1.6;
+}
+.season-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.temporadas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
