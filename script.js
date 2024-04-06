@@ -6,7 +6,7 @@ function toggleMenu() {
 async function listapoke() {
     const container = document.getElementById('container');
   
-    for (var i = 1; i <= 151; i++) {
+    for (var i = 1; i <= 500; i++) {
       const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
   
       try {
